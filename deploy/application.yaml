@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/vlalphal
+kind: Application
+metadata:
+  name: myapp-argo-application
+  namespace: argocd 
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/rborlone/projectotbs.git
+    targetRevision: HEAD
+    path: deploy 
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: myapp
