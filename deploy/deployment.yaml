@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: test-helloworld
+  name: test-helloworld
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: test-helloworld
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: test-helloworld
+    spec:
+      containers:
+      - image: harbor.alemana.cl/dev/nuevaimagena
+        name: nuevaimagena
+        resources: {}
+status: {}
