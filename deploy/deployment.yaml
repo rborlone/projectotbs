@@ -18,7 +18,7 @@ spec:
         app: test-helloworld
     spec:
       containers:
-      - image: harbor.alemana.cl/dev/nuevaimagena
+      - image: harbor.alemana.cl/dev/nuevaimagen@sha256:36c23d067cceffdd035971431a350740a4964432292b8d73240c15d0913076e0 
         name: nuevaimagena
         resources: {}
 status: {}
